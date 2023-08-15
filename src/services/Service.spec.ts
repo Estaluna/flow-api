@@ -1,6 +1,6 @@
-jest.mock("");
+// jest.mock("");
 
-const mockedGenerateToken = jest.mocked(generateToken);
+// const mockedGenerateToken = jest.mocked();
 
 describe("", () => {
   afterEach(() => {
