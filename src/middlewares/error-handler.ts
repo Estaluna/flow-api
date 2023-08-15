@@ -1,4 +1,3 @@
-import { ValidationError as JoiValidationError } from "joi";
 import { Request, Response, NextFunction } from "express";
 
 export function errorHandler(
@@ -7,9 +6,6 @@ export function errorHandler(
   res: Response,
   next: NextFunction
 ): void {
-  if (err instanceof JoiValidationError) {
-    res.status(400).json({ error: err.message });
-  } else {
-    next(err);
-  }
+  //TODO check for errors
+  next(err);
 }

@@ -6,6 +6,6 @@ const healthController = new HealthController();
 
 const router = Router();
 
-router.post("/health", [healthController.healthCheck]);
+router.post("/health", healthController.healthCheck);
 
 export default router;

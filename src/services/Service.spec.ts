@@ -1,8 +1,24 @@
 // jest.mock("");
 
-// const mockedGenerateToken = jest.mocked();
+// const mockedFct = jest.fn();
+// const context = new class({} as pg.Client, "", "");
+//   Object.defineProperty(context, "privateProp", {
+//     get: mockedFct,
+//   });
 
-describe("", () => {
+// const mockedGenerateToken = jest.mocked(anyfunction);
+
+// jest.mock(
+//   "..",
+//   jest.fn().mockImplementation(() => {
+//     return {
+//       update: jest.fn(),
+//       create: jest.fn(),
+//     };
+//   })
+// );
+
+describe("service", () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
