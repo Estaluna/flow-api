@@ -1,0 +1,18 @@
+node_modules
+docker-compose.yml
+lerna-debug.log
+*.tsbuildinfo
+dist
+bundle
+bundles
+coverage
+data/**
+.parcel-cache
+.idea
+.DS_Store
+yarn-error.log
+.env
+.eslintcache
+
+# Local Netlify folder
+.netlify
